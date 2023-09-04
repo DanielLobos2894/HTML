@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 5%;
+  padding: 0;
+  background-color: #f5f5f5;
+
+
+  background-image: url(img/background-2426328.jpg);
+  background-size: cover;
+  color: white;
+
+}
+
+
+
+
+.Creditos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  opacity: 65%;
+}
+.container {
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin: 10%;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+.img-fluid{
+  margin-bottom: 10%;
+}
+
+
+.gallery {
+  margin-bottom: 10%;
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.gallery img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery img.active {
+  opacity: 1;
+}
+
+@keyframes galleryAnimation {
+  0%, 20% {
+    opacity: 0;
+  }
+  25%, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.gallery img:nth-child(1) {
+  animation: galleryAnimation 15s infinite;
+}
+
+.gallery img:nth-child(2) {
+  animation: galleryAnimation 15s infinite 5s;
+}
+
+.gallery img:nth-child(3) {
+  animation: galleryAnimation 15s infinite 10s;
+}
+
+
+    /* Estilos para Contactos */
+
+    .content {
+      padding: 30px;
+    }
+
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .error_message {
+      color: red;
+    }
+
+    /* Estilos para el formulario de contacto */
+    #contact_form {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .required:after {
+      content: "*";
+      color: red;
+    }
+
+    #submit_button {
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+
+    /* Estilos para la sección de envío */
+    #after_submit {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para la imagen adjunta */
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+
+
+
+
+
